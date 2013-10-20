@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0460"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -16,8 +16,8 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ADA980311813E48100FFF802"
-               BuildableName = "TravisExampleTests.xctest"
+               BlueprintIdentifier = "AD3B30E2181408B600D0AA5B"
+               BuildableName = "TravisExampleTests.octest"
                BlueprintName = "TravisExampleTests"
                ReferencedContainer = "container:TravisExample.xcodeproj">
             </BuildableReference>

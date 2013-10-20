@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0460"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ADA9800D1813E48000FFF802"
+               BlueprintIdentifier = "AD3B30B9181408B500D0AA5B"
                BuildableName = "TravisExample.app"
                BlueprintName = "TravisExample"
                ReferencedContainer = "container:TravisExample.xcodeproj">
@@ -32,8 +32,8 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "ADA980311813E48100FFF802"
-               BuildableName = "TravisExampleTests.xctest"
+               BlueprintIdentifier = "AD3B30E2181408B600D0AA5B"
+               BuildableName = "TravisExampleTests.octest"
                BlueprintName = "TravisExampleTests"
                ReferencedContainer = "container:TravisExample.xcodeproj">
             </BuildableReference>
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ADA9800D1813E48000FFF802"
+            BlueprintIdentifier = "AD3B30B9181408B500D0AA5B"
             BuildableName = "TravisExample.app"
             BlueprintName = "TravisExample"
             ReferencedContainer = "container:TravisExample.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ADA9800D1813E48000FFF802"
+            BlueprintIdentifier = "AD3B30B9181408B500D0AA5B"
             BuildableName = "TravisExample.app"
             BlueprintName = "TravisExample"
             ReferencedContainer = "container:TravisExample.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "ADA9800D1813E48000FFF802"
+            BlueprintIdentifier = "AD3B30B9181408B500D0AA5B"
             BuildableName = "TravisExample.app"
             BlueprintName = "TravisExample"
             ReferencedContainer = "container:TravisExample.xcodeproj">
