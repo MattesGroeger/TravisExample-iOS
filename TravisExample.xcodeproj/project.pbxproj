@@ -1,489 +1,1125 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		ADA980121813E48100FFF802 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA980111813E48100FFF802 /* Foundation.framework */; };
-		ADA980141813E48100FFF802 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA980131813E48100FFF802 /* CoreGraphics.framework */; };
-		ADA980161813E48100FFF802 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA980151813E48100FFF802 /* UIKit.framework */; };
-		ADA9801C1813E48100FFF802 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADA9801A1813E48100FFF802 /* InfoPlist.strings */; };
-		ADA9801E1813E48100FFF802 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA9801D1813E48100FFF802 /* main.m */; };
-		ADA980221813E48100FFF802 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA980211813E48100FFF802 /* AppDelegate.m */; };
-		ADA980251813E48100FFF802 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA980231813E48100FFF802 /* Main_iPhone.storyboard */; };
-		ADA980281813E48100FFF802 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA980261813E48100FFF802 /* Main_iPad.storyboard */; };
-		ADA9802B1813E48100FFF802 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA9802A1813E48100FFF802 /* ViewController.m */; };
-		ADA9802D1813E48100FFF802 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA9802C1813E48100FFF802 /* Images.xcassets */; };
-		ADA980341813E48100FFF802 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA980331813E48100FFF802 /* XCTest.framework */; };
-		ADA980351813E48100FFF802 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA980111813E48100FFF802 /* Foundation.framework */; };
-		ADA980361813E48100FFF802 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA980151813E48100FFF802 /* UIKit.framework */; };
-		ADA9803E1813E48100FFF802 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADA9803C1813E48100FFF802 /* InfoPlist.strings */; };
-		ADA980401813E48100FFF802 /* TravisExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA9803F1813E48100FFF802 /* TravisExampleTests.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		ADA980371813E48100FFF802 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ADA980061813E48000FFF802 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ADA9800D1813E48000FFF802;
-			remoteInfo = TravisExample;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		ADA9800E1813E48000FFF802 /* TravisExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravisExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADA980111813E48100FFF802 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		ADA980131813E48100FFF802 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		ADA980151813E48100FFF802 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		ADA980191813E48100FFF802 /* TravisExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TravisExample-Info.plist"; sourceTree = "<group>"; };
-		ADA9801B1813E48100FFF802 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		ADA9801D1813E48100FFF802 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		ADA9801F1813E48100FFF802 /* TravisExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TravisExample-Prefix.pch"; sourceTree = "<group>"; };
-		ADA980201813E48100FFF802 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		ADA980211813E48100FFF802 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		ADA980241813E48100FFF802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		ADA980271813E48100FFF802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		ADA980291813E48100FFF802 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		ADA9802A1813E48100FFF802 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		ADA9802C1813E48100FFF802 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		ADA980321813E48100FFF802 /* TravisExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravisExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADA980331813E48100FFF802 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		ADA9803B1813E48100FFF802 /* TravisExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TravisExampleTests-Info.plist"; sourceTree = "<group>"; };
-		ADA9803D1813E48100FFF802 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		ADA9803F1813E48100FFF802 /* TravisExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravisExampleTests.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		ADA9800B1813E48000FFF802 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADA980141813E48100FFF802 /* CoreGraphics.framework in Frameworks */,
-				ADA980161813E48100FFF802 /* UIKit.framework in Frameworks */,
-				ADA980121813E48100FFF802 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADA9802F1813E48100FFF802 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADA980341813E48100FFF802 /* XCTest.framework in Frameworks */,
-				ADA980361813E48100FFF802 /* UIKit.framework in Frameworks */,
-				ADA980351813E48100FFF802 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		ADA980051813E48000FFF802 = {
-			isa = PBXGroup;
-			children = (
-				ADA980171813E48100FFF802 /* TravisExample */,
-				ADA980391813E48100FFF802 /* TravisExampleTests */,
-				ADA980101813E48000FFF802 /* Frameworks */,
-				ADA9800F1813E48000FFF802 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		ADA9800F1813E48000FFF802 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				ADA9800E1813E48000FFF802 /* TravisExample.app */,
-				ADA980321813E48100FFF802 /* TravisExampleTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		ADA980101813E48000FFF802 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				ADA980111813E48100FFF802 /* Foundation.framework */,
-				ADA980131813E48100FFF802 /* CoreGraphics.framework */,
-				ADA980151813E48100FFF802 /* UIKit.framework */,
-				ADA980331813E48100FFF802 /* XCTest.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		ADA980171813E48100FFF802 /* TravisExample */ = {
-			isa = PBXGroup;
-			children = (
-				ADA980201813E48100FFF802 /* AppDelegate.h */,
-				ADA980211813E48100FFF802 /* AppDelegate.m */,
-				ADA980231813E48100FFF802 /* Main_iPhone.storyboard */,
-				ADA980261813E48100FFF802 /* Main_iPad.storyboard */,
-				ADA980291813E48100FFF802 /* ViewController.h */,
-				ADA9802A1813E48100FFF802 /* ViewController.m */,
-				ADA9802C1813E48100FFF802 /* Images.xcassets */,
-				ADA980181813E48100FFF802 /* Supporting Files */,
-			);
-			path = TravisExample;
-			sourceTree = "<group>";
-		};
-		ADA980181813E48100FFF802 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				ADA980191813E48100FFF802 /* TravisExample-Info.plist */,
-				ADA9801A1813E48100FFF802 /* InfoPlist.strings */,
-				ADA9801D1813E48100FFF802 /* main.m */,
-				ADA9801F1813E48100FFF802 /* TravisExample-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		ADA980391813E48100FFF802 /* TravisExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				ADA9803F1813E48100FFF802 /* TravisExampleTests.m */,
-				ADA9803A1813E48100FFF802 /* Supporting Files */,
-			);
-			path = TravisExampleTests;
-			sourceTree = "<group>";
-		};
-		ADA9803A1813E48100FFF802 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				ADA9803B1813E48100FFF802 /* TravisExampleTests-Info.plist */,
-				ADA9803C1813E48100FFF802 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		ADA9800D1813E48000FFF802 /* TravisExample */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ADA980431813E48100FFF802 /* Build configuration list for PBXNativeTarget "TravisExample" */;
-			buildPhases = (
-				ADA9800A1813E48000FFF802 /* Sources */,
-				ADA9800B1813E48000FFF802 /* Frameworks */,
-				ADA9800C1813E48000FFF802 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TravisExample;
-			productName = TravisExample;
-			productReference = ADA9800E1813E48000FFF802 /* TravisExample.app */;
-			productType = "com.apple.product-type.application";
-		};
-		ADA980311813E48100FFF802 /* TravisExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ADA980461813E48100FFF802 /* Build configuration list for PBXNativeTarget "TravisExampleTests" */;
-			buildPhases = (
-				ADA9802E1813E48100FFF802 /* Sources */,
-				ADA9802F1813E48100FFF802 /* Frameworks */,
-				ADA980301813E48100FFF802 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ADA980381813E48100FFF802 /* PBXTargetDependency */,
-			);
-			name = TravisExampleTests;
-			productName = TravisExampleTests;
-			productReference = ADA980321813E48100FFF802 /* TravisExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		ADA980061813E48000FFF802 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "Mattes Groeger";
-				TargetAttributes = {
-					ADA980311813E48100FFF802 = {
-						TestTargetID = ADA9800D1813E48000FFF802;
-					};
-				};
-			};
-			buildConfigurationList = ADA980091813E48000FFF802 /* Build configuration list for PBXProject "TravisExample" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = ADA980051813E48000FFF802;
-			productRefGroup = ADA9800F1813E48000FFF802 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				ADA9800D1813E48000FFF802 /* TravisExample */,
-				ADA980311813E48100FFF802 /* TravisExampleTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		ADA9800C1813E48000FFF802 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADA980281813E48100FFF802 /* Main_iPad.storyboard in Resources */,
-				ADA9802D1813E48100FFF802 /* Images.xcassets in Resources */,
-				ADA980251813E48100FFF802 /* Main_iPhone.storyboard in Resources */,
-				ADA9801C1813E48100FFF802 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADA980301813E48100FFF802 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADA9803E1813E48100FFF802 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		ADA9800A1813E48000FFF802 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADA9802B1813E48100FFF802 /* ViewController.m in Sources */,
-				ADA980221813E48100FFF802 /* AppDelegate.m in Sources */,
-				ADA9801E1813E48100FFF802 /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADA9802E1813E48100FFF802 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADA980401813E48100FFF802 /* TravisExampleTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		ADA980381813E48100FFF802 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ADA9800D1813E48000FFF802 /* TravisExample */;
-			targetProxy = ADA980371813E48100FFF802 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		ADA9801A1813E48100FFF802 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ADA9801B1813E48100FFF802 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		ADA980231813E48100FFF802 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ADA980241813E48100FFF802 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		ADA980261813E48100FFF802 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ADA980271813E48100FFF802 /* Base */,
-			);
-			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		ADA9803C1813E48100FFF802 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ADA9803D1813E48100FFF802 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		ADA980411813E48100FFF802 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		ADA980421813E48100FFF802 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		ADA980441813E48100FFF802 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TravisExample/TravisExample-Prefix.pch";
-				INFOPLIST_FILE = "TravisExample/TravisExample-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		ADA980451813E48100FFF802 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TravisExample/TravisExample-Prefix.pch";
-				INFOPLIST_FILE = "TravisExample/TravisExample-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		ADA980471813E48100FFF802 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TravisExample.app/TravisExample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TravisExample/TravisExample-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "TravisExampleTests/TravisExampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		ADA980481813E48100FFF802 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TravisExample.app/TravisExample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TravisExample/TravisExample-Prefix.pch";
-				INFOPLIST_FILE = "TravisExampleTests/TravisExampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		ADA980091813E48000FFF802 /* Build configuration list for PBXProject "TravisExample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ADA980411813E48100FFF802 /* Debug */,
-				ADA980421813E48100FFF802 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ADA980431813E48100FFF802 /* Build configuration list for PBXNativeTarget "TravisExample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ADA980441813E48100FFF802 /* Debug */,
-				ADA980451813E48100FFF802 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		ADA980461813E48100FFF802 /* Build configuration list for PBXNativeTarget "TravisExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ADA980471813E48100FFF802 /* Debug */,
-				ADA980481813E48100FFF802 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = ADA980061813E48000FFF802 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>210C9247A949491294713D17</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-TravisExampleTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>426E3E529B914B1EB6948EDE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8903D6333D8D4BAFA3370B09</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8903D6333D8D4BAFA3370B09</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-TravisExampleTests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>ADA980051813E48000FFF802</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ADA980171813E48100FFF802</string>
+				<string>ADA980391813E48100FFF802</string>
+				<string>ADA980101813E48000FFF802</string>
+				<string>ADA9800F1813E48000FFF802</string>
+				<string>E936DF90E5EF4E8FBC99FD09</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA980061813E48000FFF802</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0500</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Mattes Groeger</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>ADA980311813E48100FFF802</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>ADA9800D1813E48000FFF802</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>ADA980091813E48000FFF802</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>ADA980051813E48000FFF802</string>
+			<key>productRefGroup</key>
+			<string>ADA9800F1813E48000FFF802</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>ADA9800D1813E48000FFF802</string>
+				<string>ADA980311813E48100FFF802</string>
+			</array>
+		</dict>
+		<key>ADA980091813E48000FFF802</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>ADA980411813E48100FFF802</string>
+				<string>ADA980421813E48100FFF802</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>ADA9800A1813E48000FFF802</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>ADA9802B1813E48100FFF802</string>
+				<string>ADA980221813E48100FFF802</string>
+				<string>ADA9801E1813E48100FFF802</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>ADA9800B1813E48000FFF802</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>ADA980141813E48100FFF802</string>
+				<string>ADA980161813E48100FFF802</string>
+				<string>ADA980121813E48100FFF802</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>ADA9800C1813E48000FFF802</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>ADA980281813E48100FFF802</string>
+				<string>ADA9802D1813E48100FFF802</string>
+				<string>ADA980251813E48100FFF802</string>
+				<string>ADA9801C1813E48100FFF802</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>ADA9800D1813E48000FFF802</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>ADA980431813E48100FFF802</string>
+			<key>buildPhases</key>
+			<array>
+				<string>ADA9800A1813E48000FFF802</string>
+				<string>ADA9800B1813E48000FFF802</string>
+				<string>ADA9800C1813E48000FFF802</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>TravisExample</string>
+			<key>productName</key>
+			<string>TravisExample</string>
+			<key>productReference</key>
+			<string>ADA9800E1813E48000FFF802</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>ADA9800E1813E48000FFF802</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>TravisExample.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>ADA9800F1813E48000FFF802</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ADA9800E1813E48000FFF802</string>
+				<string>ADA980321813E48100FFF802</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA980101813E48000FFF802</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ADA980111813E48100FFF802</string>
+				<string>ADA980131813E48100FFF802</string>
+				<string>ADA980151813E48100FFF802</string>
+				<string>ADA980331813E48100FFF802</string>
+				<string>8903D6333D8D4BAFA3370B09</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA980111813E48100FFF802</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>ADA980121813E48100FFF802</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ADA980111813E48100FFF802</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ADA980131813E48100FFF802</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>ADA980141813E48100FFF802</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ADA980131813E48100FFF802</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ADA980151813E48100FFF802</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>ADA980161813E48100FFF802</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ADA980151813E48100FFF802</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ADA980171813E48100FFF802</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ADA980201813E48100FFF802</string>
+				<string>ADA980211813E48100FFF802</string>
+				<string>ADA980231813E48100FFF802</string>
+				<string>ADA980261813E48100FFF802</string>
+				<string>ADA980291813E48100FFF802</string>
+				<string>ADA9802A1813E48100FFF802</string>
+				<string>ADA9802C1813E48100FFF802</string>
+				<string>ADA980181813E48100FFF802</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>TravisExample</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA980181813E48100FFF802</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ADA980191813E48100FFF802</string>
+				<string>ADA9801A1813E48100FFF802</string>
+				<string>ADA9801D1813E48100FFF802</string>
+				<string>ADA9801F1813E48100FFF802</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA980191813E48100FFF802</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>TravisExample-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA9801A1813E48100FFF802</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ADA9801B1813E48100FFF802</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA9801B1813E48100FFF802</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA9801C1813E48100FFF802</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ADA9801A1813E48100FFF802</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ADA9801D1813E48100FFF802</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA9801E1813E48100FFF802</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ADA9801D1813E48100FFF802</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ADA9801F1813E48100FFF802</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TravisExample-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA980201813E48100FFF802</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>AppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA980211813E48100FFF802</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>AppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA980221813E48100FFF802</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ADA980211813E48100FFF802</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ADA980231813E48100FFF802</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ADA980241813E48100FFF802</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main_iPhone.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA980241813E48100FFF802</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main_iPhone.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA980251813E48100FFF802</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ADA980231813E48100FFF802</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ADA980261813E48100FFF802</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ADA980271813E48100FFF802</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>Main_iPad.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA980271813E48100FFF802</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>name</key>
+			<string>Base</string>
+			<key>path</key>
+			<string>Base.lproj/Main_iPad.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA980281813E48100FFF802</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ADA980261813E48100FFF802</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ADA980291813E48100FFF802</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA9802A1813E48100FFF802</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA9802B1813E48100FFF802</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ADA9802A1813E48100FFF802</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ADA9802C1813E48100FFF802</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA9802D1813E48100FFF802</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ADA9802C1813E48100FFF802</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ADA9802E1813E48100FFF802</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>ADA980401813E48100FFF802</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>ADA9802F1813E48100FFF802</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>ADA980341813E48100FFF802</string>
+				<string>ADA980361813E48100FFF802</string>
+				<string>ADA980351813E48100FFF802</string>
+				<string>426E3E529B914B1EB6948EDE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>ADA980301813E48100FFF802</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>ADA9803E1813E48100FFF802</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>ADA980311813E48100FFF802</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>ADA980461813E48100FFF802</string>
+			<key>buildPhases</key>
+			<array>
+				<string>E954864D23AA4F6687C6B7D6</string>
+				<string>ADA9802E1813E48100FFF802</string>
+				<string>ADA9802F1813E48100FFF802</string>
+				<string>ADA980301813E48100FFF802</string>
+				<string>210C9247A949491294713D17</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>ADA980381813E48100FFF802</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>TravisExampleTests</string>
+			<key>productName</key>
+			<string>TravisExampleTests</string>
+			<key>productReference</key>
+			<string>ADA980321813E48100FFF802</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>ADA980321813E48100FFF802</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>TravisExampleTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>ADA980331813E48100FFF802</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>XCTest.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/XCTest.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>ADA980341813E48100FFF802</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ADA980331813E48100FFF802</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ADA980351813E48100FFF802</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ADA980111813E48100FFF802</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ADA980361813E48100FFF802</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ADA980151813E48100FFF802</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ADA980371813E48100FFF802</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>ADA980061813E48000FFF802</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>ADA9800D1813E48000FFF802</string>
+			<key>remoteInfo</key>
+			<string>TravisExample</string>
+		</dict>
+		<key>ADA980381813E48100FFF802</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>ADA9800D1813E48000FFF802</string>
+			<key>targetProxy</key>
+			<string>ADA980371813E48100FFF802</string>
+		</dict>
+		<key>ADA980391813E48100FFF802</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ADA9803F1813E48100FFF802</string>
+				<string>ADA9803A1813E48100FFF802</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>TravisExampleTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA9803A1813E48100FFF802</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ADA9803B1813E48100FFF802</string>
+				<string>ADA9803C1813E48100FFF802</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA9803B1813E48100FFF802</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>TravisExampleTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA9803C1813E48100FFF802</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>ADA9803D1813E48100FFF802</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA9803D1813E48100FFF802</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA9803E1813E48100FFF802</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ADA9803C1813E48100FFF802</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ADA9803F1813E48100FFF802</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TravisExampleTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADA980401813E48100FFF802</key>
+		<dict>
+			<key>fileRef</key>
+			<string>ADA9803F1813E48100FFF802</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>ADA980411813E48100FFF802</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>ADA980421813E48100FFF802</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.0</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>ADA980431813E48100FFF802</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>ADA980441813E48100FFF802</string>
+				<string>ADA980451813E48100FFF802</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>ADA980441813E48100FFF802</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>TravisExample/TravisExample-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>TravisExample/TravisExample-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>ADA980451813E48100FFF802</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>TravisExample/TravisExample-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>TravisExample/TravisExample-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>ADA980461813E48100FFF802</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>ADA980471813E48100FFF802</string>
+				<string>ADA980481813E48100FFF802</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>ADA980471813E48100FFF802</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>E936DF90E5EF4E8FBC99FD09</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/TravisExample.app/TravisExample</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>TravisExample/TravisExample-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>TravisExampleTests/TravisExampleTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>ADA980481813E48100FFF802</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>E936DF90E5EF4E8FBC99FD09</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/TravisExample.app/TravisExample</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>TravisExample/TravisExample-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>TravisExampleTests/TravisExampleTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>E936DF90E5EF4E8FBC99FD09</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-TravisExampleTests.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods-TravisExampleTests.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E954864D23AA4F6687C6B7D6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>ADA980061813E48000FFF802</string>
+</dict>
+</plist>
