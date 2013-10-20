@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/MattesGroeger/TravisExample-iOS.png?branch=master)](https://travis-ci.org/MattesGroeger/TravisExample-iOS)
+
 ## Overview
 
 This project demonstates the usage of [Travis CI](http://www.travis-ci.org/). It includes the following:
