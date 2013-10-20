@@ -1,0 +1,4 @@
+language: objective-c
+script:
+  - xcodebuild -workspace TravisExample.xcworkspace -scheme TravisExample -sdk iphonesimulator
+  - xcodebuild test -workspace TravisExample.xcworkspace -scheme TravisExampleTests -sdk iphonesimulator
