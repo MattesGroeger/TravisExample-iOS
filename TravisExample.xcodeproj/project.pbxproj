@@ -431,6 +431,7 @@
 		ADA980441813E48100FFF802 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -438,7 +439,6 @@
 				INFOPLIST_FILE = "TravisExample/TravisExample-Info.plist";
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "arm64 armv7 armv7s i386";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -446,13 +446,13 @@
 		ADA980451813E48100FFF802 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TravisExample/TravisExample-Prefix.pch";
 				INFOPLIST_FILE = "TravisExample/TravisExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALID_ARCHS = "arm64 armv7 armv7s i386";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
