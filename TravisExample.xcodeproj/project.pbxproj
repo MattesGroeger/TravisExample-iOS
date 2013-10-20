@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADA980121813E48100FFF802 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA980111813E48100FFF802 /* Foundation.framework */; };
+		ADA980141813E48100FFF802 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA980131813E48100FFF802 /* CoreGraphics.framework */; };
+		ADA980161813E48100FFF802 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA980151813E48100FFF802 /* UIKit.framework */; };
+		ADA9801C1813E48100FFF802 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADA9801A1813E48100FFF802 /* InfoPlist.strings */; };
+		ADA9801E1813E48100FFF802 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA9801D1813E48100FFF802 /* main.m */; };
+		ADA980221813E48100FFF802 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA980211813E48100FFF802 /* AppDelegate.m */; };
+		ADA980251813E48100FFF802 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA980231813E48100FFF802 /* Main_iPhone.storyboard */; };
+		ADA980281813E48100FFF802 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADA980261813E48100FFF802 /* Main_iPad.storyboard */; };
+		ADA9802B1813E48100FFF802 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA9802A1813E48100FFF802 /* ViewController.m */; };
+		ADA9802D1813E48100FFF802 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA9802C1813E48100FFF802 /* Images.xcassets */; };
+		ADA980341813E48100FFF802 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA980331813E48100FFF802 /* XCTest.framework */; };
+		ADA980351813E48100FFF802 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA980111813E48100FFF802 /* Foundation.framework */; };
+		ADA980361813E48100FFF802 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADA980151813E48100FFF802 /* UIKit.framework */; };
+		ADA9803E1813E48100FFF802 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADA9803C1813E48100FFF802 /* InfoPlist.strings */; };
+		ADA980401813E48100FFF802 /* TravisExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA9803F1813E48100FFF802 /* TravisExampleTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADA980371813E48100FFF802 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADA980061813E48000FFF802 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADA9800D1813E48000FFF802;
+			remoteInfo = TravisExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADA9800E1813E48000FFF802 /* TravisExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravisExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA980111813E48100FFF802 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ADA980131813E48100FFF802 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ADA980151813E48100FFF802 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ADA980191813E48100FFF802 /* TravisExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TravisExample-Info.plist"; sourceTree = "<group>"; };
+		ADA9801B1813E48100FFF802 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ADA9801D1813E48100FFF802 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ADA9801F1813E48100FFF802 /* TravisExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TravisExample-Prefix.pch"; sourceTree = "<group>"; };
+		ADA980201813E48100FFF802 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ADA980211813E48100FFF802 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ADA980241813E48100FFF802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		ADA980271813E48100FFF802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		ADA980291813E48100FFF802 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ADA9802A1813E48100FFF802 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ADA9802C1813E48100FFF802 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ADA980321813E48100FFF802 /* TravisExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravisExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA980331813E48100FFF802 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		ADA9803B1813E48100FFF802 /* TravisExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TravisExampleTests-Info.plist"; sourceTree = "<group>"; };
+		ADA9803D1813E48100FFF802 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ADA9803F1813E48100FFF802 /* TravisExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TravisExampleTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADA9800B1813E48000FFF802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA980141813E48100FFF802 /* CoreGraphics.framework in Frameworks */,
+				ADA980161813E48100FFF802 /* UIKit.framework in Frameworks */,
+				ADA980121813E48100FFF802 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA9802F1813E48100FFF802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA980341813E48100FFF802 /* XCTest.framework in Frameworks */,
+				ADA980361813E48100FFF802 /* UIKit.framework in Frameworks */,
+				ADA980351813E48100FFF802 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADA980051813E48000FFF802 = {
+			isa = PBXGroup;
+			children = (
+				ADA980171813E48100FFF802 /* TravisExample */,
+				ADA980391813E48100FFF802 /* TravisExampleTests */,
+				ADA980101813E48000FFF802 /* Frameworks */,
+				ADA9800F1813E48000FFF802 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADA9800F1813E48000FFF802 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADA9800E1813E48000FFF802 /* TravisExample.app */,
+				ADA980321813E48100FFF802 /* TravisExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADA980101813E48000FFF802 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADA980111813E48100FFF802 /* Foundation.framework */,
+				ADA980131813E48100FFF802 /* CoreGraphics.framework */,
+				ADA980151813E48100FFF802 /* UIKit.framework */,
+				ADA980331813E48100FFF802 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADA980171813E48100FFF802 /* TravisExample */ = {
+			isa = PBXGroup;
+			children = (
+				ADA980201813E48100FFF802 /* AppDelegate.h */,
+				ADA980211813E48100FFF802 /* AppDelegate.m */,
+				ADA980231813E48100FFF802 /* Main_iPhone.storyboard */,
+				ADA980261813E48100FFF802 /* Main_iPad.storyboard */,
+				ADA980291813E48100FFF802 /* ViewController.h */,
+				ADA9802A1813E48100FFF802 /* ViewController.m */,
+				ADA9802C1813E48100FFF802 /* Images.xcassets */,
+				ADA980181813E48100FFF802 /* Supporting Files */,
+			);
+			path = TravisExample;
+			sourceTree = "<group>";
+		};
+		ADA980181813E48100FFF802 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADA980191813E48100FFF802 /* TravisExample-Info.plist */,
+				ADA9801A1813E48100FFF802 /* InfoPlist.strings */,
+				ADA9801D1813E48100FFF802 /* main.m */,
+				ADA9801F1813E48100FFF802 /* TravisExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADA980391813E48100FFF802 /* TravisExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADA9803F1813E48100FFF802 /* TravisExampleTests.m */,
+				ADA9803A1813E48100FFF802 /* Supporting Files */,
+			);
+			path = TravisExampleTests;
+			sourceTree = "<group>";
+		};
+		ADA9803A1813E48100FFF802 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADA9803B1813E48100FFF802 /* TravisExampleTests-Info.plist */,
+				ADA9803C1813E48100FFF802 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADA9800D1813E48000FFF802 /* TravisExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADA980431813E48100FFF802 /* Build configuration list for PBXNativeTarget "TravisExample" */;
+			buildPhases = (
+				ADA9800A1813E48000FFF802 /* Sources */,
+				ADA9800B1813E48000FFF802 /* Frameworks */,
+				ADA9800C1813E48000FFF802 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TravisExample;
+			productName = TravisExample;
+			productReference = ADA9800E1813E48000FFF802 /* TravisExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADA980311813E48100FFF802 /* TravisExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADA980461813E48100FFF802 /* Build configuration list for PBXNativeTarget "TravisExampleTests" */;
+			buildPhases = (
+				ADA9802E1813E48100FFF802 /* Sources */,
+				ADA9802F1813E48100FFF802 /* Frameworks */,
+				ADA980301813E48100FFF802 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADA980381813E48100FFF802 /* PBXTargetDependency */,
+			);
+			name = TravisExampleTests;
+			productName = TravisExampleTests;
+			productReference = ADA980321813E48100FFF802 /* TravisExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADA980061813E48000FFF802 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Mattes Groeger";
+				TargetAttributes = {
+					ADA980311813E48100FFF802 = {
+						TestTargetID = ADA9800D1813E48000FFF802;
+					};
+				};
+			};
+			buildConfigurationList = ADA980091813E48000FFF802 /* Build configuration list for PBXProject "TravisExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADA980051813E48000FFF802;
+			productRefGroup = ADA9800F1813E48000FFF802 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADA9800D1813E48000FFF802 /* TravisExample */,
+				ADA980311813E48100FFF802 /* TravisExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADA9800C1813E48000FFF802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA980281813E48100FFF802 /* Main_iPad.storyboard in Resources */,
+				ADA9802D1813E48100FFF802 /* Images.xcassets in Resources */,
+				ADA980251813E48100FFF802 /* Main_iPhone.storyboard in Resources */,
+				ADA9801C1813E48100FFF802 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA980301813E48100FFF802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA9803E1813E48100FFF802 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADA9800A1813E48000FFF802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA9802B1813E48100FFF802 /* ViewController.m in Sources */,
+				ADA980221813E48100FFF802 /* AppDelegate.m in Sources */,
+				ADA9801E1813E48100FFF802 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADA9802E1813E48100FFF802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA980401813E48100FFF802 /* TravisExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADA980381813E48100FFF802 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADA9800D1813E48000FFF802 /* TravisExample */;
+			targetProxy = ADA980371813E48100FFF802 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADA9801A1813E48100FFF802 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADA9801B1813E48100FFF802 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ADA980231813E48100FFF802 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADA980241813E48100FFF802 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		ADA980261813E48100FFF802 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADA980271813E48100FFF802 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		ADA9803C1813E48100FFF802 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADA9803D1813E48100FFF802 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADA980411813E48100FFF802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADA980421813E48100FFF802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADA980441813E48100FFF802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TravisExample/TravisExample-Prefix.pch";
+				INFOPLIST_FILE = "TravisExample/TravisExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ADA980451813E48100FFF802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TravisExample/TravisExample-Prefix.pch";
+				INFOPLIST_FILE = "TravisExample/TravisExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		ADA980471813E48100FFF802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TravisExample.app/TravisExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TravisExample/TravisExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TravisExampleTests/TravisExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		ADA980481813E48100FFF802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TravisExample.app/TravisExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TravisExample/TravisExample-Prefix.pch";
+				INFOPLIST_FILE = "TravisExampleTests/TravisExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADA980091813E48000FFF802 /* Build configuration list for PBXProject "TravisExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA980411813E48100FFF802 /* Debug */,
+				ADA980421813E48100FFF802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADA980431813E48100FFF802 /* Build configuration list for PBXNativeTarget "TravisExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA980441813E48100FFF802 /* Debug */,
+				ADA980451813E48100FFF802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ADA980461813E48100FFF802 /* Build configuration list for PBXNativeTarget "TravisExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADA980471813E48100FFF802 /* Debug */,
+				ADA980481813E48100FFF802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADA980061813E48000FFF802 /* Project object */;
+}
