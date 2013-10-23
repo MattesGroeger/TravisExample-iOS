@@ -4,9 +4,10 @@
 
 This project demonstates the usage of [Travis CI](http://www.travis-ci.org/). It includes the following:
 * Example XCode project
+* Xctool
 * CocoaPods
 * Kiwi Testing Framework
-* Travis CI configuration (TODO)
+* Travis CI configuration
 * Build script (TODO)
 * Coveralls integration (TODO)
 * Testflight integration (TODO)
