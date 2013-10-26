@@ -13,3 +13,6 @@ build/
 
 # AppCode
 .idea/
+
+# Project specific
+scripts/config.sh
