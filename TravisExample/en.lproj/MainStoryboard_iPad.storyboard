@@ -12,7 +12,7 @@
                         <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BoF-bD-kmD">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hello Travis" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BoF-bD-kmD">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="0gz-8B-b8g"/>
                                     <constraint firstAttribute="width" constant="133" id="74Y-XO-poy"/>
@@ -24,8 +24,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="BoF-bD-kmD" firstAttribute="top" secondItem="5" secondAttribute="top" constant="166" id="5sj-ZY-PUE"/>
                             <constraint firstItem="BoF-bD-kmD" firstAttribute="centerX" secondItem="5" secondAttribute="centerX" type="default" id="xxg-gv-Jz5"/>
-                            <constraint firstItem="BoF-bD-kmD" firstAttribute="top" secondItem="5" secondAttribute="top" constant="167" id="zWi-ga-ky5"/>
                         </constraints>
                     </view>
                 </viewController>
