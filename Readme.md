@@ -8,11 +8,16 @@ This project demonstates the usage of [Travis CI](http://www.travis-ci.org/). It
 * CocoaPods
 * Kiwi Testing Framework
 * Travis CI configuration
-* Build script (TODO)
-* Coveralls integration (TODO)
-* Testflight integration (TODO)
+* App signing
+* Testflight distibution
+* Hockeyapp distribution
 
 ## Setup
-
-1. Clone the project
-2. Run `pod install`
+```
+git clone git@github.com:MattesGroeger/TravisExample-iOS.git
+cd TravisExample
+sudo gem install bundler
+bundle install
+pod install
+open TravisExample.xcworkspace
+```
