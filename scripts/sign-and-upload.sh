@@ -35,7 +35,7 @@ if [ ! -z "$TESTFLIGHT_TEAM_TOKEN" ] && [ ! -z "$TESTFLIGHT_API_TOKEN" ]; then
     -F api_token="$TESTFLIGHT_API_TOKEN" \
     -F team_token="$TESTFLIGHT_TEAM_TOKEN" \
     -F distribution_lists='Internal' \
-    -F notes="$RELEASE_NOTES" -v
+    -F notes="$RELEASE_NOTES"
 fi
 
 if [ ! -z "$HOCKEY_APP_ID" ] && [ ! -z "$HOCKEY_APP_TOKEN" ]; then
@@ -50,5 +50,5 @@ if [ ! -z "$HOCKEY_APP_ID" ] && [ ! -z "$HOCKEY_APP_TOKEN" ]; then
     -F notes_type="0" \
     -F ipa="@$OUTPUTDIR/$APPNAME.ipa" \
     -F dsym="@$OUTPUTDIR/$APPNAME.app.dSYM.zip" \
-    -H "X-HockeyAppToken: $HOCKEY_APP_TOKEN" -v
+    -H "X-HockeyAppToken: $HOCKEY_APP_TOKEN"
 fi
