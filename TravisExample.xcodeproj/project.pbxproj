@@ -474,6 +474,7 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TravisExample/TravisExample-Prefix.pch";
+				HOCKEY_APP_ID = "";
 				INFOPLIST_FILE = "TravisExample/TravisExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TESTFLIGHT_APP_TOKEN = "";
@@ -495,7 +496,9 @@
 					"RELEASE=1",
 					"COCOAPODS=1",
 					"TESTFLIGHT_APP_TOKEN=$(TESTFLIGHT_APP_TOKEN)",
+					"HOCKEY_APP_ID=$(HOCKEY_APP_ID)",
 				);
+				HOCKEY_APP_ID = "";
 				INFOPLIST_FILE = "TravisExample/TravisExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

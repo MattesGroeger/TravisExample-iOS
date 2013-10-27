@@ -7,7 +7,7 @@ before_script:
 - ./scripts/add-key.sh
 - ./scripts/update-bundle.sh
 script:
-- xctool -workspace TravisExample.xcworkspace -scheme TravisExample -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO TESTFLIGHT_APP_TOKEN=$TESTFLIGHT_APP_TOKEN
+- xctool -workspace TravisExample.xcworkspace -scheme TravisExample -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO TESTFLIGHT_APP_TOKEN=$TESTFLIGHT_APP_TOKEN HOCKEY_APP_ID=$HOCKEY_APP_ID
 - xctool test -workspace TravisExample.xcworkspace -scheme TravisExampleTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 after_script:
 - ./scripts/remove-key.sh
