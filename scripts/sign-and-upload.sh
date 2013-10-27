@@ -17,9 +17,9 @@ OUTPUTDIR="$PWD/build/Release-iphoneos"
 echo "***************************"
 echo "*        Signing          *"
 echo "***************************"
-xcrun -log -sdk iphoneos PackageApplication "$OUTPUTDIR/$APPNAME.app" -o "$OUTPUTDIR/$APPNAME.ipa" -sign "$DEVELOPER_NAME" -embed "$PROVISIONING_PROFILE"
+xcrun -log -sdk iphoneos PackageApplication "$OUTPUTDIR/$APP_NAME.app" -o "$OUTPUTDIR/$APP_NAME.ipa" -sign "$DEVELOPER_NAME" -embed "$PROVISIONING_PROFILE"
 
-zip -r -9 "$OUTPUTDIR/$APPNAME.app.dSYM.zip" "$OUTPUTDIR/$APPNAME.app.dSYM"
+zip -r -9 "$OUTPUTDIR/$APP_NAME.app.dSYM.zip" "$OUTPUTDIR/$APP_NAME.app.dSYM"
 
 RELEASE_DATE=`date '+%Y-%m-%d %H:%M:%S'`
 RELEASE_NOTES="Build: $TRAVIS_BUILD_NUMBER\nUploaded: $RELEASE_DATE"
@@ -30,8 +30,8 @@ if [ ! -z "$TESTFLIGHT_TEAM_TOKEN" ] && [ ! -z "$TESTFLIGHT_API_TOKEN" ]; then
   echo "* Uploading to Testflight *"
   echo "***************************"
   curl http://testflightapp.com/api/builds.json \
-    -F file="@$OUTPUTDIR/$APPNAME.ipa" \
-    -F dsym="@$OUTPUTDIR/$APPNAME.app.dSYM.zip" \
+    -F file="@$OUTPUTDIR/$APP_NAME.ipa" \
+    -F dsym="@$OUTPUTDIR/$APP_NAME.app.dSYM.zip" \
     -F api_token="$TESTFLIGHT_API_TOKEN" \
     -F team_token="$TESTFLIGHT_TEAM_TOKEN" \
     -F distribution_lists='Internal' \
@@ -48,7 +48,7 @@ if [ ! -z "$HOCKEY_APP_ID" ] && [ ! -z "$HOCKEY_APP_TOKEN" ]; then
     -F notify="0" \
     -F notes="$RELEASE_NOTES" \
     -F notes_type="0" \
-    -F ipa="@$OUTPUTDIR/$APPNAME.ipa" \
-    -F dsym="@$OUTPUTDIR/$APPNAME.app.dSYM.zip" \
+    -F ipa="@$OUTPUTDIR/$APP_NAME.ipa" \
+    -F dsym="@$OUTPUTDIR/$APP_NAME.app.dSYM.zip" \
     -H "X-HockeyAppToken: $HOCKEY_APP_TOKEN"
 fi

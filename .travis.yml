@@ -15,7 +15,7 @@ after_success:
 - ./scripts/sign-and-upload.sh
 env:
   global:
-  - APPNAME="TravisExample"
+  - APP_NAME="TravisExample"
   - 'DEVELOPER_NAME="iPhone Distribution: Mattes Groeger"'
   - PROFILE_NAME="TravisExample_Ad_Hoc"
   - INFO_PLIST="TravisExample/TravisExample-Info.plist"
