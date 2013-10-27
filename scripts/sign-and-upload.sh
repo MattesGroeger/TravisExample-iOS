@@ -11,7 +11,7 @@ fi
 # Thanks @djacobs https://gist.github.com/djacobs/2411095
 # Thanks @johanneswuerbach https://gist.github.com/johanneswuerbach/5559514
 
-PROVISIONING_PROFILE="$HOME/Library/MobileDevice/Provisioning Profiles/$PROFILE_UUID.mobileprovision"
+PROVISIONING_PROFILE="$HOME/Library/MobileDevice/Provisioning Profiles/$PROFILE_NAME.mobileprovision"
 OUTPUTDIR="$PWD/build/Release-iphoneos"
 
 echo "***************************"

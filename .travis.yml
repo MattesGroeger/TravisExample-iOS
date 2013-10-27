@@ -18,7 +18,7 @@ env:
   global:
   - APPNAME="TravisExample"
   - 'DEVELOPER_NAME="iPhone Distribution: Mattes Groeger"'
-  - PROFILE_UUID="TravisExample_Ad_Hoc"
+  - PROFILE_NAME="TravisExample_Ad_Hoc"
   - INFO_PLIST="TravisExample/TravisExample-Info.plist"
   - BUNDLE_DISPLAY_NAME="Travis Example CI"
   - secure: JKux0mDIyS8HyBE37WWqz+HXjEFOx6ZtocfXj+W6GIuysS9o8bIleGupQ6DFbG3r8zKHuY1U+NdJRmRs6cWSZ6XaSTMw0eWtxGlTXR4S6v5TilUYppKZZyVsIJOPF0TTk9LzDMhmC2gnKs3+GXqYdHzDnyDRWZM63u4MvSVbKP8=
