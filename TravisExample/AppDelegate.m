@@ -9,12 +9,15 @@
 #import "AppDelegate.h"
 #import "TestFlight.h"
 
+#define NSStringize_helper(x) #x
+#define NSStringize(x) @NSStringize_helper(x)
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 #ifdef RELEASE
-	[TestFlight takeOff:@"30e256d2-930f-4d54-ba33-bc4d277eec45"];
+	[TestFlight takeOff:NSStringize(TESTFLIGHT_APP_TOKEN)];
 #endif
     return YES;
 }

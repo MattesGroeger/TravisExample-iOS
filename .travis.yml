@@ -7,7 +7,7 @@ before_script:
 - ./scripts/add-key.sh
 - ./scripts/update-bundle.sh
 script:
-- xctool -workspace TravisExample.xcworkspace -scheme TravisExample -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO
+- xctool -workspace TravisExample.xcworkspace -scheme TravisExample -sdk iphoneos -configuration Release OBJROOT=$PWD/build SYMROOT=$PWD/build ONLY_ACTIVE_ARCH=NO TESTFLIGHT_APP_TOKEN=$TESTFLIGHT_APP_TOKEN
 - xctool test -workspace TravisExample.xcworkspace -scheme TravisExampleTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
 after_script:
 - ./scripts/remove-key.sh
@@ -26,3 +26,4 @@ env:
   - secure: Tb60cUcj/n7KvSoCzhzeHSbcROcDCoKoQ7vbNEUBUWlMdDIci9pGIhqKNngRVkdIAQccHORA9UVSMMWMHBJdw1XwXeHm/G38DEWaGV3BN/LAKKD7ZiKCnTYwT14FTm3kPv9OsjNhrW089EHwLNWSlDiHltFnuJkG8m8SylnItIQ=
   - secure: MrT87q4xg1qXMegZtoS2lpgfIgRG6YnGLvr5BEx1YqdOZqQOdxSKhLecpn1CpOW90/rzp1cInw71syoDHiNCiKiWsm1zKTS5QVgGFQTWbCVTs+VUurLRAsxxLd/yoa/FOCQ7ZGIDavOj5H36p+40qewHf9an4+Tmmvtu4xqnVzo=
   - secure: aCef4Nqwnmbqc85exegdNyp2C96McY41Zoo412u8FKCEHR5GIcSqwZ4TeDOyluBUeLHymHpMMIyJlBqSVAWdwUfCBsk2AC3W7APFKhCzvVb+Cz8t4AlEm/uwPUkceFpecLtav+8nw3dq6/3hipr4CjFeR7HGoj/cmvROHUcepMY=
+  - secure: dWfqfSkw8RvEjsUXa0alTyTPSdvuzW6vMjWNQOLa6kuBBJVkpKfKuNScHTBmVLfq/cGfyUgmU5xc0szUBwuMeHY2ulLsmFgLa0HKn7peRarbJCS+dtVomRao9n6ZjxCBmAuHD+6/78LyHyk87szuBYhoKzkPNfnHpPHlt2ozQGQ=

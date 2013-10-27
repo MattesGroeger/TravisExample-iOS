@@ -476,6 +476,7 @@
 				GCC_PREFIX_HEADER = "TravisExample/TravisExample-Prefix.pch";
 				INFOPLIST_FILE = "TravisExample/TravisExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TESTFLIGHT_APP_TOKEN = "";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
@@ -493,11 +494,13 @@
 					"$(inherited)",
 					"RELEASE=1",
 					"COCOAPODS=1",
+					"TESTFLIGHT_APP_TOKEN=$(TESTFLIGHT_APP_TOKEN)",
 				);
 				INFOPLIST_FILE = "TravisExample/TravisExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TESTFLIGHT_APP_TOKEN = "";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
 			};
