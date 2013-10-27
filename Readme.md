@@ -1,23 +1,27 @@
 [![Build Status](https://travis-ci.org/MattesGroeger/TravisExample-iOS.png?branch=master)](https://travis-ci.org/MattesGroeger/TravisExample-iOS)
 
-## Overview
+This project demonstrates the usage of [Travis CI](http://www.travis-ci.org/) for testing, building, signing and distributing an App. A detailed explaination on how to use it will be published soon.
 
-This project demonstates the usage of [Travis CI](http://www.travis-ci.org/). It includes the following:
-* Example XCode project
-* Xctool
-* CocoaPods
-* Kiwi Testing Framework
-* Travis CI configuration
-* App signing
-* Testflight distibution
-* Hockeyapp distribution
+### Overview
 
-## Setup
+It combines the following services/tools:
+* Dependencies with [CocoaPods](http://cocoapods.org/)
+* Testing with [Kiwi](https://github.com/allending/Kiwi)
+* Building with [xctool](https://github.com/facebook/xctool)
+* CI with [Travis CI](https://travis-ci.org/)
+* Distribution with [Testflight](https://testflightapp.com/)
+* Distribution with [Hockeyapp](http://hockeyapp.net/)
+
+### Setup
+
+Open Terminal and follow these steps:
 ```
 git clone git@github.com:MattesGroeger/TravisExample-iOS.git
-cd TravisExample
+cd TravisExample-iOS
 sudo gem install bundler
 bundle install
 pod install
 open TravisExample.xcworkspace
 ```
+
+Now you can inspect and run the App locally.
