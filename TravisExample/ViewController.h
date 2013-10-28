@@ -10,4 +10,6 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)onCrash:(id)sender;
+
 @end
