@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/MattesGroeger/TravisExample-iOS.png?branch=master)](https://travis-ci.org/MattesGroeger/TravisExample-iOS)
 
-This project demonstrates the usage of [Travis CI](http://www.travis-ci.org/) for testing, building, signing and distributing an App. [The gist](https://gist.github.com/johanneswuerbach/5559514) from [Johannes Würbach](https://github.com/johanneswuerbach) was a great help for me in setting up this project. A detailed explaination on how to use it [can be found on objc.io](http://www.objc.io/issue-6/travis-ci.html).
+This project demonstrates the usage of [Travis CI](http://www.travis-ci.org/) for testing, building, signing and distributing an App. [The gist](https://gist.github.com/johanneswuerbach/5559514) from [Johannes Würbach](https://github.com/johanneswuerbach) was a great help for me in setting up this project. A detailed explaination on how to use it [can be found here](http://blog.mattes-groeger.de/travis-ci/).
 
 ### Overview
 
