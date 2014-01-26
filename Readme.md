@@ -25,22 +25,3 @@ open TravisExample.xcworkspace
 ```
 
 Now you can inspect and run the App locally.
-
-### Notes
-
-Please note that the latest version of xctool doesn't support [Kiwi](https://github.com/allending/Kiwi) and [Specta](https://github.com/specta/specta) tests. You can manually rollback to version 0.1.11 by following these steps:
-
-```
-cd /usr/local
-brew versions xctool
-```
-
-Now pick the git commit hash of version `0.1.11` and proceed:
-
-```
-git checkout 4cf7bf9 Library/Formula/xctool.rb
-brew uninstall xctool
-brew install xctool
-```
-
-Travis is still using an older version of xctool which works fine with [Kiwi](https://github.com/allending/Kiwi) and [Specta](https://github.com/specta/specta).
