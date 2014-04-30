@@ -477,8 +477,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E909003959A4C8F98628FAB /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mattes Groeger (85AEGDU5MB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mattes Groeger (85AEGDU5MB)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TravisExample/TravisExample-Prefix.pch";
 				HOCKEY_APP_ID = "";
@@ -495,8 +495,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E909003959A4C8F98628FAB /* Pods.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Mattes Groeger (85AEGDU5MB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mattes Groeger (85AEGDU5MB)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TravisExample/TravisExample-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
