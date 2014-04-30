@@ -226,6 +226,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Mattes Groeger";
+				TargetAttributes = {
+					AD3B30B9181408B500D0AA5B = {
+						DevelopmentTeam = 85AEGDU5MB;
+					};
+				};
 			};
 			buildConfigurationList = AD3B30B5181408B500D0AA5B /* Build configuration list for PBXProject "TravisExample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -472,11 +477,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E909003959A4C8F98628FAB /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TravisExample/TravisExample-Prefix.pch";
 				HOCKEY_APP_ID = "";
 				INFOPLIST_FILE = "TravisExample/TravisExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TESTFLIGHT_APP_TOKEN = "";
 				USER_HEADER_SEARCH_PATHS = "\"${PROJECT_DIR}/Pods\"/**";
 				WRAPPER_EXTENSION = app;
